@@ -48,3 +48,6 @@ SpringBoot整合mybatis,并使用分页插件 PageHelper和通用 Mapper,[原作
 接口2:http://localhost:8900/user/query/{id}  
 返回数据格式:json  
 返回内容:id对应的user
+
+## 服务端部署运行
+因为springboot项目内置了tomcat应用,而且最后打包出来的结果是jar包,因此不依赖外部Tomcat服务器,于是我们可以使用mvn clean package命令先将项目打成jar包,然后使用java -jar命令运行jar包即可.
